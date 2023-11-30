@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "926194088531",
+    "firebase_url": "https://nila-mujair-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "nila-mujair",
+    "storage_bucket": "nila-mujair.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926194088531:android:96d242f91ed0bbb831a4a6",
+        "android_client_info": {
+          "package_name": "com.citra.mujairnila"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926194088531-uth71gg6ntc7e7braotipsnd0eoo3ogn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.citra.mujairnila",
+            "certificate_hash": "d7ec74a2f1fcd850685dfdab68947da5b6b5be8d"
+          }
+        },
+        {
+          "client_id": "926194088531-36hhiugmno75nlcivr8pu1jo6bmbm2tv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3aj1bqJ9GNhU7OD0cxh2huonqVJLqOWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926194088531-36hhiugmno75nlcivr8pu1jo6bmbm2tv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

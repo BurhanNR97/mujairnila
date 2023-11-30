@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_penuh"
+    android:id="@+id/layoutTambahh">
+
+    <TextView
+        android:id="@+id/Tambah_info"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="TAMBAH DATA"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/parent"
+        app:passwordToggleTint="@color/colorPrimary">
+        <EditText
+            android:id="@+id/Tambah_AkunID"
+            style="@style/modifiedEditText"
+            android:hint="ID User"
+            android:textSize="18sp"
+            android:inputType="text"
+            android:focusable="false"
+            android:clickable="false"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/parent"
+        android:id="@+id/idididid"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        app:passwordToggleTint="@color/colorPrimary">
+        <EditText
+            android:id="@+id/Tambah_AkunNama"
+            style="@style/modifiedEditText"
+            android:hint="Nama"
+            android:textSize="18sp"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        app:passwordToggleTint="@color/colorPrimary">
+        <EditText
+            android:id="@+id/Tambah_AkunUser"
+            style="@style/modifiedEditText"
+            android:hint="Username"
+            android:textSize="18sp"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputAkunPass"
+        style="@style/parent"
+        app:passwordToggleEnabled="true"
+        app:errorEnabled="true"
+        app:passwordToggleTint="@color/colorPrimary"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+        <EditText
+            android:id="@+id/Tambah_AkunPassword"
+            style="@style/modifiedEditText"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tamba_simpan"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_hijau"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tamba_hapus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/whiteTextColor"
+            android:text="SIMPAN"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tamba_hapus"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_merah"
+            android:textColor="@color/whiteTextColor"
+            app:layout_constraintLeft_toRightOf="@id/tamba_simpan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tamba_batal"
+            android:text="HAPUS"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tamba_batal"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_abu"
+            android:textColor="@color/whiteTextColor"
+            app:layout_constraintLeft_toRightOf="@id/tamba_hapus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="BATAL"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

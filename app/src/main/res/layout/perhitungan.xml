@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:text="Gambar Grayscale"/>
+
+    <ImageView
+        android:id="@+id/ujiGS"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Tabel Grayscale"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:text="Gambar Deteksi Tepi Canny"/>
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:id="@+id/ujiGray"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkTextColor"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:text="Tabel Hu's Invariant Moments"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/viewUjiiii"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        tools:listitem="@layout/tabel_sampel"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:text="Database Sampel"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viewdb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            tools:listitem="@layout/tabel_moments"/>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:text="Tabel KNN"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viewknn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            tools:listitem="@layout/tabel_knn"/>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:text="Hasil Rank"/>
+
+    <include layout="@layout/tabel_rank"/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Klasifikasi Mujair dan Nila</string>
+    <string name="judul_skripsi">IDENTIFIKASI IKAN NILA DAN MUJAIR MENGGUNAKAN ALGORITMA K-NN DAN HU’S MOMENT INVARIANTS DENGAN POLA DETEKSI TEPI CANNY</string>
+    <string name="mujair">Ikan Mujair (Oreochromis mossambicus) merupakan ikan tawar yang paling tinggi produksinya dan sudah dibudidayakan di seluruh propinsi di Indonesia. Di Indonesia terdapat beberapa macam strain ikan mujair, yaitu sinyonya, punten, kumpay, majalaya, kancra domas, taiwan dan merah</string>
+    <string name="nila">Ikan nila (Oreochromis niloticus) merupakan genus ikan yang dapat hidup dalam kondisi lingkungan yang memiliki toleransi tinggi terhadap kualitas air yang rendah, sering kali ditemukan hidup normal pada habitat-habitat yang ikan dari jenis lain tidak dapat hidup.</string>
+
+    <string-array name="jenis">
+        <item>- Jenis -</item>
+        <item>Ikan Mujair</item>
+        <item>Ikan Nila</item>
+    </string-array>
+</resources>

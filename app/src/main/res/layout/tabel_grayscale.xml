@@ -1,0 +1,537 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TableLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:background="@drawable/border_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x,y"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:background="@drawable/border_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:background="@drawable/border_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:padding="5dp"
+                    android:background="@drawable/border_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:padding="5dp"
+                    android:background="@drawable/border_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:padding="5dp"
+                    android:background="@drawable/border_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/gray_xn"
+                    android:padding="5dp"
+                    android:background="@drawable/border_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="n"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_field"
+                    android:padding="5dp"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_11"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_12"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_13"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/gray_14"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:text="..."
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/gray_1n"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_field"
+                    android:padding="5dp"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_21"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_22"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_23"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/gray_24"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:text="..."
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/gray_2n"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_field"
+                    android:padding="5dp"
+                    android:text="3"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_31"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_32"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_33"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/gray_34"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:text="..."
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/gray_3n"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_field"
+                    android:padding="5dp"
+                    android:text="4"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_41"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_42"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_43"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/gray_44"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:text="..."
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/gray_4n"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_field"
+                    android:padding="5dp"
+                    android:text="..."
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:text="..."
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:text="..."
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:text="..."
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:text="..."
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:text="..."
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:text="..."
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/gray_ny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_field"
+                    android:padding="5dp"
+                    android:text="n"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_n1"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_n2"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/gray_n3"
+                    android:padding="5dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/gray_n4"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:text="..."
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/gray_nn"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView>
+</LinearLayout>
