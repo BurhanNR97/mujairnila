@@ -22,6 +22,8 @@ import android.graphics.Matrix;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.SystemClock;
 import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -88,6 +90,10 @@ public class Pengujian extends AppCompatActivity {
     TextView gray_n1, gray_n2, gray_n3, gray_n4, gray_nn, ikan1, ikan2, persen1, persen2;
     EditText inputK;
 
+    TextView komputasi;
+    long mulai;
+    long berenti = -1;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,6 +123,7 @@ public class Pengujian extends AppCompatActivity {
         ikan2 = findViewById(R.id.rank_ikan2);  persen2 = findViewById(R.id.rank_persen2);
 
         gbrGS = findViewById(R.id.ujiGS);
+        komputasi = findViewById(R.id.waktuKomputasi);
         gbr_input = findViewById(R.id.imgUji);
         lyHitung = findViewById(R.id.lyHitung);
         inputK = findViewById(R.id.nilaiK);
@@ -142,6 +149,8 @@ public class Pengujian extends AppCompatActivity {
                     inputK.requestFocus();
                     inputK.setError("Input K");
                 } else {
+                    mulai = System.currentTimeMillis();
+
                     int iniK = Integer.parseInt(inputK.getText().toString());
                     AlertDialog.Builder builder = new AlertDialog.Builder(Pengujian.this, R.style.AlertDialogTheme);
                     builder.setCancelable(false);
@@ -309,9 +318,28 @@ public class Pengujian extends AppCompatActivity {
                     model.setHasil(inHasil);
                     model.setPersen(inPersen);
                     saveImage(model, bmp, bp, id);
+
+                    berenti = System.currentTimeMillis();
+                    long mili = elapsed();
+                    int dtk = (int) (mili / 1000) % 60;
+                    int mnt = (int) ((mili / (1000 * 60)) % 60);
+                    int jam = (int) ((mili / (1000 * 60 * 60)) % 24);
+                    int mdt = (int) (mili - (dtk * 1000) - (mnt * 1000 * 60) - (jam * 1000 * 60 * 60));
+                    if (mnt == 0) {
+                        komputasi.setText("Waktu Komputasi: " + dtk + " detik (" + mdt + " milidetik)");
+                    } else {
+                        komputasi.setText("Waktu Komputasi: " + mnt + " menit " + dtk + " detik (" + mdt + " milidetik)");
+                    }
                 }
             }
         });
+    }
+
+    private long elapsed() {
+        if (berenti >= 0) {
+            return berenti - mulai;
+        }
+        return System.currentTimeMillis() - mulai;
     }
 
     @Override
@@ -390,7 +418,7 @@ public class Pengujian extends AppCompatActivity {
         return a;
     }
 
-    @Override
+   @Override
     public void onBackPressed() {
         super.onBackPressed();
         startActivity(new Intent(Pengujian.this, MainActivity.class));
@@ -465,6 +493,7 @@ public class Pengujian extends AppCompatActivity {
                                     dbb.child(image_name).setValue(model).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
+
                                             Toast.makeText(Pengujian.this, "Data berhasil disimpan", Toast.LENGTH_SHORT).show();
                                             alertDialog.cancel();
                                         }

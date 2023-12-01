@@ -32,6 +32,8 @@
         android:textStyle="bold"
         android:text="Tabel Grayscale"/>
 
+    <include layout="@layout/tabel_grayscale"/>
+
     <TextView
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
@@ -126,5 +128,17 @@
         android:text="Hasil Rank"/>
 
     <include layout="@layout/tabel_rank"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkTextColor"
+        android:textSize="18sp"
+        android:id="@+id/waktuKomputasi"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:text=""/>
 
 </LinearLayout>
