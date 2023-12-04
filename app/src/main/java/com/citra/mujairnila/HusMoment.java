@@ -26,20 +26,20 @@ public class HusMoment {
                 n03 = getNormalizedCentralMoment(0, 3, image),
                 n11 = getNormalizedCentralMoment(1, 1, image);
 
-        //First moment
+        //M1
         moments[0] = n20 + n02;
 
-        //Second moment
+        //M2
         moments[1] = Math.pow((n20 - 02), 2) + Math.pow(2 * n11, 2);
 
-        //Third moment
+        //M3
         moments[2] = Math.pow(n30 - (3 * (n12)), 2)
                 + Math.pow((3 * n21 - n03), 2);
 
-        //Fourty moment
+        //M4
         moments[3] = Math.pow((n30 + n12), 2) + Math.pow((n12 + n03), 2);
 
-        //Fifty moment
+        //M5
         moments[4] = (n30 - 3 * n12) * (n30 + n12)
                 * (Math.pow((n30 + n12), 2) - 3 * Math.pow((n21 + n03), 2))
                 + (3 * n21 - n03) * (n21 + n03)

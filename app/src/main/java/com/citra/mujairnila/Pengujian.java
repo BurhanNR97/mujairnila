@@ -164,10 +164,10 @@ public class Pengujian extends AppCompatActivity {
                     alertDialog.show();
                     lyHitung.setVisibility(View.VISIBLE);
 
-                    setGrayscale(bmp);
+                    Bitmap bitmapp = setGrayscale(bmp);
 
                     CannyEdge canny = new CannyEdge();
-                    canny.process(bmp);
+                    canny.process(bitmapp);
                     Bitmap bp = canny.getEdgesImage();
 
                     double[][] pikselGambar = getPikselMatrix(bp);
@@ -198,13 +198,6 @@ public class Pengujian extends AppCompatActivity {
 
                         double[] hasil = new double[dbMoments.length];
                         for (int i=0; i<dbMoments.length; i++) {
-                            //Euclidian distance
-                            /*double m1 = Math.pow(dbMoments[i][0] - listMoments[0], 2);
-                            double m2 = Math.pow(dbMoments[i][1] - listMoments[1], 2);
-                            double m3 = Math.pow(dbMoments[i][2] - listMoments[2], 2);
-                            double m4 = Math.pow(dbMoments[i][3] - listMoments[3], 2);
-                            double m5 = Math.pow(dbMoments[i][4] - listMoments[4], 2);
-                            hasil[i] = Math.sqrt(m1 + m2 + m3 + m4 + m5);*/
 
                             //Manhattan Distance
                             double m1 = Math.abs(dbMoments[i][0] - listMoments[0]);
@@ -507,7 +500,7 @@ public class Pengujian extends AppCompatActivity {
         });
     }
 
-    private void setGrayscale(Bitmap image) {
+    private Bitmap setGrayscale(Bitmap image) {
         int piksel;
         Bitmap bp = Bitmap.createBitmap(image.getWidth(), image.getHeight(), Bitmap.Config.ARGB_8888);
         double [][] matriks = new double[image.getWidth()][image.getHeight()];
@@ -549,6 +542,7 @@ public class Pengujian extends AppCompatActivity {
         gray_n1.setText("" + convFloatToInt(matriks[x][0]));   gray_n2.setText("" + convFloatToInt(matriks[x][1]));
         gray_n3.setText("" + convFloatToInt(matriks[x][2]));   gray_n4.setText("" + convFloatToInt(matriks[x][3]));
         gray_n4.setText("" + convFloatToInt(matriks[x][4]));   gray_nn.setText("" + convFloatToInt(matriks[x][y]));
+        return bp;
     }
 
     private double doubleKoma2(double a) {
